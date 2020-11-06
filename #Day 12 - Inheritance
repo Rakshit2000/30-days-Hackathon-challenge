@@ -1,0 +1,30 @@
+
+
+
+class student(Person):
+    def __init__(self,firstName, lastName, idNumber, scores):
+        self.firstName = firstName
+        self.lastName = lastName
+        self.idNumber = idNumber
+        self.scores = scores
+
+
+    def calculate(self):
+
+        total = int(sum(scores)/len(scores))
+        if total>=90 and total<=100:
+            return 'A++'
+        elif total>=80 and total<9:
+            return 'A+'
+        elif total>=70 and total<80:
+            return 'A'
+        elif total>=60 and total<70:
+            return 'B'
+        elif total>=50 and total<60:
+            return 'C'
+
+
+
+
+
+
