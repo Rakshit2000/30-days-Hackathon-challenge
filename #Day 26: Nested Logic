@@ -1,0 +1,18 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+rd,rm,ry = map(int,list(input().split()))
+ad,am,ay = map(int,list(input().split()))
+
+
+fine = 0
+if ry>ay:
+    fine=10000
+elif ry==ay:
+    if rm>am:
+        fine = 500*(rm-am)
+    elif rm==am:
+        if rd>ad:
+            fine = 15*(rd-ad)    
+   
+
+
+print(fine)    
